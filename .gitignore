@@ -16,6 +16,7 @@ node_modules/
 .DS_Store
 Thumbs.db
 .cache
+.idea
 .project
 .settings
 .tmproj
