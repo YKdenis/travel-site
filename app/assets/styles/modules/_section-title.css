@@ -1,0 +1,28 @@
+.sectio-title {
+  font-size: 2.55rem;
+  font-weight: 300;
+  text-align: center;
+
+  &__icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.9rem;
+
+    @mixin atSmall {
+      margin-right: 0.75rem;
+      margin-left: 0;
+      display: inline-block;
+      margin-bottom: 0;
+    }
+  }
+
+  @mixin atSmall {
+    font-size: 3.75rem;
+  }
+
+  strong {
+    font-weight: 500;
+  }
+
+}

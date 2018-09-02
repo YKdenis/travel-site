@@ -664,8 +664,16 @@ a {
     margin-right: -65px;
   }
 
+.row--gutters-large {
+    margin-right: -100px
+  }
+
 .row--gutters > div{
     padding-right: 65px;
+  }
+
+.row--gutters-large > div{
+    padding-right: 100px;
   }
 
 .row__b-margin-until-medium {
@@ -683,6 +691,11 @@ a {
       width: 33.33%;
     }
 
+    .row__medium-6 {
+      float: left;
+      width: 50%;
+    }
+
     .row__medium-8 {
       float: left;
       width: 66.66%;
@@ -698,8 +711,10 @@ a {
   }
 
 .generic-content-container p {
+    font-weight: 300;
     line-height: 1.65;
-    margin: 1.8rem 0;
+    margin: 0 0 1.8rem 0;
+    text-align: justify;
   }
 
 @media(min-width: 530px) {
@@ -709,6 +724,96 @@ a {
   }
   }
 
+p.generic-content-container--text-align-left-small {
+    text-align-last: center;
+  }
+
+@media(min-width: 530px) {
+
+p.generic-content-container--text-align-left-small {
+      text-align-last: left
+  }
+  }
+
 .generic-content-container p a {
     font-weight: 700;
+  }
+
+.sectio-title {
+  font-size: 2.55rem;
+  font-weight: 300;
+  text-align: center;
+
+}
+
+.sectio-title__icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.9rem;
+  }
+
+@media(min-width: 530px) {
+
+.sectio-title__icon {
+      margin-right: 0.75rem;
+      margin-left: 0;
+      display: inline-block;
+      margin-bottom: 0
+  }
+  }
+
+@media(min-width: 530px) {
+
+.sectio-title {
+    font-size: 3.75rem
+
+}
+  }
+
+.sectio-title strong {
+    font-weight: 500;
+  }
+
+.feature-item {
+
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+@media(min-width: 530px) {
+
+.feature-item {
+    padding-left: 94px
+}
+  }
+
+.feature-item__icon {
+    display: block;
+    margin: 0 auto; left: 0;
+  }
+
+@media(min-width: 530px) {
+
+.feature-item__icon {
+      position: absolute;
+  }
+  }
+
+.feature-item__title {
+    font-size: 1.575rem;
+    font-weight: 500;
+    margin-top: .6em;
+    margin-bottom: .8rem;
+    text-align: center;
+  }
+
+@media(min-width: 530px) {
+
+.feature-item__title {
+      font-size: 1.875rem;
+      font-weight: 300;
+      margin-top: 1em;
+      text-align: left
+  }
   }
