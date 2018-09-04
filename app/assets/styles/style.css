@@ -1,5 +1,6 @@
 @import "normalize.css";
 @import "base/_mixins.css";
+@import "base/_mixins.css";
 @import "base/_global.css";
 @import "modules/_large-hero.css";
 @import "modules/_btn.css";
@@ -11,3 +12,4 @@
 @import "modules/_section-title.css";
 @import "modules/_feature-item.css";
 @import "modules/_testimonial.css";
+@import "modules/_sprite.css";
