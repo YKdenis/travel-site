@@ -2,27 +2,25 @@ import $ from 'jquery';
 import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints';
 
 class RevealOnScroll {
-    constructor(itemsToReveal, offset) {
-        this.itemsToReveal = $(itemsToReveal);
-        this.offsetPercentage = offset;
+    constructor(itemsToRevealClassName, offset) {
+        this.itemsToReveal = $(itemsToRevealClassName);
         this.hideInitially();
-        this.createWaypoints();
+        this.createWaypoints(this.itemsToReveal, offset);
     }
 
     hideInitially() {
         this.itemsToReveal.addClass("reveal-item");
     }
 
-    createWaypoints() {
-        const that = this;
-        this.itemsToReveal.each(function() {
+    createWaypoints(itemsToReveal, offsetPercentage) {
+        itemsToReveal.each(function() {
             const currentItem = this;
             new Waypoint({
                 element: currentItem,
                 handler: () => {
                     $(currentItem).addClass('reveal-item--is-visible');
                 },
-                offset: that.offsetPercentage
+                offset: offsetPercentage
             })
         });
     }
